@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Brickwright page unavailable</title>
+<p><a href="/">Brickwright editors</a></p>
+<script>
+const moves = new Map([
+  ['/brickwright-lite/index.html', '/brickwright-lite/'],
+  ['/brickwright-legacy/', '/brickwright-legacy/editor.html']
+]);
+const destination = moves.get(location.pathname);
+if (destination) location.replace(destination + location.search + location.hash);
+</script>
+</html>
