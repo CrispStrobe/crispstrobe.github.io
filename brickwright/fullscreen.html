@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Brickwright Legacy</title>
+<p><a id="editor" href="/brickwright-legacy/fullscreen.html">Open Brickwright Legacy</a></p>
+<p><a id="fallback" href="https://brickwright.vercel.app/fullscreen.html">Open the Legacy Vercel editor</a></p>
+<script>
+const suffix = location.search + location.hash;
+document.querySelector('#fallback').href += suffix;
+location.replace(document.querySelector('#editor').href + suffix);
+</script>
+</html>
